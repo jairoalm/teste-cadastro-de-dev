@@ -37,10 +37,8 @@ public class DriverFactory {
 			//Definir dimensões do browser
 			driver.manage().window().maximize();
 			DriverFactory.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		}
-		
-		return driver;
-		
+		}		
+		return driver;		
 	}
 
 }
