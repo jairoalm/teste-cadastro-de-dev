@@ -2,7 +2,7 @@ package br.com.jairo.config;
 
 public class Propriedade {
 	
-	public static boolean FECHAR_BROWSER = false; 
+	public static boolean FECHAR_BROWSER = true; 
 	
 	public static Browsers browser = Browsers.CHROME;
 	
