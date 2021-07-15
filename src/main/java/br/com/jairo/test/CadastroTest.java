@@ -26,7 +26,7 @@ public class CadastroTest extends Listener{
 		System.out.println(cadastro.getCapturarTexto());		
 	}
 	
-	/*@Test
+	@Test
 	public void validar_campos(){
 		
 		cadastro.setInteragir_Com_Campo_Nome("123456");
@@ -37,5 +37,4 @@ public class CadastroTest extends Listener{
 		Assert.assertEquals("Cadastro de DEVs", cadastro.getCapturarTexto());
 		
 	}
-*/
 }
