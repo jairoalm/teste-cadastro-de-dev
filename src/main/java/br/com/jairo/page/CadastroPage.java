@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 
 public class CadastroPage extends BasePage {
 
-	public void setInteragir_Com_Campo_Nome(String texto) {
+	
+     public void setInteragir_Com_Campo_Nome(String texto) {
 		escrever("nome", texto);
 	}
 
