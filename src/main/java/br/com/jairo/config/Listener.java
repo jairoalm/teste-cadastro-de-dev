@@ -10,9 +10,9 @@ public class Listener {
 	public void inicializar(){
 		DriverFactory.getDriver().get("file:///" + System.getProperty("user.dir") + "/src/main/resources/formulario.html");
 	}
-	@After
+	/*@After
 	public void finaliza(){
 		DriverFactory.getDriver().quit();
 	}
-
+*/
 }

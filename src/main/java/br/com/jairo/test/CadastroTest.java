@@ -37,4 +37,14 @@ public class CadastroTest extends Listener{
 		Assert.assertEquals("Cadastro de DEVs", cadastro.getCapturarTexto());
 		
 	}
+	
+	@Test
+	public void validar_campos_com_varios_caracteres(){
+		cadastro.setInteragir_Com_Campo_Nome("asdfghjklertyuiopcvb");
+		cadastro.setInteragir_Com_Campo_Sobrenome("asdfghjklertyuiopcvb");
+		cadastro.setInteragir_Com_Campo_Email("asdfghjklertyuiopcvb");
+		cadastro.clicar_Botao_Concluido();
+		
+		Assert.assertEquals("Cadastro de DEVs", cadastro.getCapturarTexto());
+	}
 }
