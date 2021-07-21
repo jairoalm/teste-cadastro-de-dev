@@ -26,25 +26,6 @@ public class CadastroTest extends Listener{
 		System.out.println(cadastro.getCapturarTexto());		
 	}
 	
-	@Test
-	public void validar_campos(){
-		
-		cadastro.setInteragir_Com_Campo_Nome("123456");
-		cadastro.setInteragir_Com_Campo_Sobrenome("223323");
-		cadastro.setInteragir_Com_Campo_Email("1231213");
-		cadastro.clicar_Botao_Concluido();
-		
-		Assert.assertEquals("Cadastro de DEVs", cadastro.getCapturarTexto());
-		
-	}
 	
-	@Test
-	public void validar_campos_com_varios_caracteres(){
-		cadastro.setInteragir_Com_Campo_Nome("asdfghjklertyuiopcvb");
-		cadastro.setInteragir_Com_Campo_Sobrenome("asdfghjklertyuiopcvb");
-		cadastro.setInteragir_Com_Campo_Email("asdfghjklertyuiopcvb");
-		cadastro.clicar_Botao_Concluido();
-		
-		Assert.assertEquals("Cadastro de DEVs", cadastro.getCapturarTexto());
-	}
+	
 }
